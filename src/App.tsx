@@ -6,7 +6,7 @@ import Carousel from "./components/Carousel/Carousel";
 import Schedule from "./components/Schedule";
 import DressCode from "./components/DressCode";
 import DogFood from "./components/DogFood/DogFood";
-import Section from "./components/shared/Section";
+
 const App: React.FC = () => {
   return (
     <div className="app">
