@@ -1,0 +1,146 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  position: relative;
+  gap: 2rem;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #a31818;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.timelineItem {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.timelineItem.left {
+  justify-content: flex-end;
+  padding-right: calc(50% + 2rem);
+}
+
+.timelineItem.right {
+  justify-content: flex-start;
+  padding-left: calc(50% + 2rem);
+}
+
+.timelineContent {
+  background-color: var(--bg-white);
+  position: relative;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.timelineContent:hover {
+  transform: translateY(-2px);
+}
+
+.timelineDot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #a31818;
+  border-radius: 50%;
+  top: 20px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.timelineItem.left .timelineDot {
+  right: calc(50% - 8px);
+}
+
+.timelineItem.right .timelineDot {
+  left: calc(50% - 8px);
+}
+
+.time {
+  font-family: var(--font-calligraphy);
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-family: var(--font-body);
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.timelineItem.left .timelineContent {
+  text-align: right;
+}
+
+.timelineItem.right .timelineContent {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding: 1rem 0;
+    gap: 1.5rem;
+  }
+
+  .timelineLine {
+    left: 30px;
+  }
+
+  .timelineItem,
+  .timelineItem.left,
+  .timelineItem.right {
+    justify-content: flex-start;
+    padding-left: 60px;
+    padding-right: 1rem;
+  }
+
+  .timelineContent {
+    padding: 1rem;
+    max-width: none;
+    text-align: left;
+  }
+
+  .timelineDot {
+    left: 22px !important;
+  }
+
+  .time {
+    font-size: 1.3rem;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timelineItem.left {
+    text-align: left;
+  }
+}

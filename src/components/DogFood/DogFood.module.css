@@ -1,0 +1,169 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 2rem;
+}
+
+.pawPrint {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("~/public/assets/images/dog-paw.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Left side paws */
+.pawPrint:nth-child(1) {
+  top: 8%;
+  left: 5%;
+  transform: rotate(-25deg);
+}
+.pawPrint:nth-child(2) {
+  top: 35%;
+  left: 8%;
+  transform: rotate(15deg);
+}
+.pawPrint:nth-child(3) {
+  top: 65%;
+  left: 12%;
+  transform: rotate(-10deg);
+}
+
+/* Left-center paws */
+.pawPrint:nth-child(4) {
+  top: 20%;
+  left: 28%;
+  transform: rotate(35deg);
+}
+.pawPrint:nth-child(5) {
+  top: 50%;
+  left: 25%;
+  transform: rotate(-20deg);
+}
+.pawPrint:nth-child(6) {
+  top: 75%;
+  left: 32%;
+  transform: rotate(25deg);
+}
+
+/* Center paws */
+.pawPrint:nth-child(7) {
+  top: 15%;
+  left: 48%;
+  transform: rotate(-15deg);
+}
+.pawPrint:nth-child(8) {
+  top: 45%;
+  left: 52%;
+  transform: rotate(20deg);
+}
+
+/* Right-center paws */
+.pawPrint:nth-child(9) {
+  top: 25%;
+  right: 28%;
+  transform: rotate(-30deg);
+}
+.pawPrint:nth-child(10) {
+  top: 60%;
+  right: 32%;
+  transform: rotate(15deg);
+}
+
+/* Right side paws */
+.pawPrint:nth-child(11) {
+  top: 10%;
+  right: 8%;
+  transform: rotate(25deg);
+}
+.pawPrint:nth-child(12) {
+  top: 40%;
+  right: 12%;
+  transform: rotate(-15deg);
+}
+.pawPrint:nth-child(13) {
+  top: 70%;
+  right: 5%;
+  transform: rotate(30deg);
+}
+.pawPrint:nth-child(14) {
+  top: 85%;
+  right: 15%;
+  transform: rotate(-20deg);
+}
+
+.message {
+  position: relative;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+  z-index: 1;
+}
+
+.message:hover {
+  transform: translateY(-2px);
+}
+
+.message p {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+
+.message p:first-child {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.message p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.imageContainer {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.imageContainer:hover .image {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .message p {
+    font-size: 1.8rem;
+  }
+
+  .message p:first-child {
+    font-size: 2rem;
+  }
+
+  .pawPrint {
+    width: 30px;
+    height: 30px;
+  }
+}
