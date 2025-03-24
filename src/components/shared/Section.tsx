@@ -12,7 +12,7 @@ const Section: React.FC<SectionProps> = ({ id, title, children }) => {
     <section id={id} className={styles.section}>
       <div className={styles.container}>
         {title && <h2>{title}</h2>}
-        <div className={styles.content}>{children}</div>
+        {children}
       </div>
     </section>
   );

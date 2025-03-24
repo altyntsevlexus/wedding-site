@@ -4,14 +4,14 @@ import styles from "./DogFood.module.css";
 
 const DogFood: React.FC = () => {
   return (
-    <Section id="dog-food" title="Замість квітів">
+    <Section id="dog-food" title="Гав!">
       {/* Paw prints */}
       {[...Array(14)].map((_, i) => (
         <div key={i} className={styles.pawPrint} />
       ))}
       <div className={styles.container}>
         <div className={styles.message}>
-          <p>Гав! Говорить Дора!</p>
+          <p>Всім привіт, говорить Дора</p>
           <img src="/assets/images/dora.jpg" alt="Dora" className={styles.dora} width={350} />
           <p>
             Дорогі гості весілля, пропоную Вам взяти участь у благодійній ініціативі - принести <b>собачий корм</b>{" "}

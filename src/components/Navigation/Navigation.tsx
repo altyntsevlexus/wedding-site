@@ -9,10 +9,10 @@ const Navigation: React.FC = () => {
           <a href="#schedule">Розклад</a>
         </li>
         <li>
-          <a href="#dress-code">Дрес-код</a>
+          <a href="#dress-code">Dress-code</a>
         </li>
         <li>
-          <a href="#dog-food">Замість квітів</a>
+          <a href="#dog-food">Гав!</a>
         </li>
       </ul>
     </nav>

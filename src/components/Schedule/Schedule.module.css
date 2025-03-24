@@ -4,7 +4,6 @@
   align-items: center;
   width: 100%;
   margin: 0;
-  padding: 2rem 0;
   position: relative;
   gap: 2rem;
 }
@@ -15,8 +14,7 @@
   transform: translateX(-50%);
   width: 2px;
   height: 100%;
-  background-color: #a31818;
-  opacity: 0.3;
+  background-color: var(--text-dark);
   z-index: 0;
 }
 
@@ -42,6 +40,7 @@
   position: relative;
   transition: transform 0.3s ease;
   width: 100%;
+  max-width: 420px;
 }
 
 .timelineContent:hover {
@@ -52,9 +51,9 @@
   position: absolute;
   width: 16px;
   height: 16px;
-  background-color: #a31818;
+  background-color: var(--accent-color);
   border-radius: 50%;
-  top: 20px;
+  top: 28px;
   transform: translateY(-50%);
   z-index: 1;
 }
@@ -79,7 +78,7 @@
   font-size: 2rem;
   color: var(--text-dark);
   margin-bottom: 0.25rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .description {
@@ -119,27 +118,14 @@
   .timelineContent {
     padding: 1rem;
     max-width: none;
-    text-align: left;
+    text-align: left !important;
   }
 
   .timelineDot {
     left: 22px !important;
+    top: 44px !important;
   }
 
-  .time {
-    font-size: 1.3rem;
-  }
-
-  .title {
-    font-size: 1.7rem;
-  }
-
-  .description {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .timelineItem.left {
     text-align: left;
   }

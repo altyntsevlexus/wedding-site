@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <h1>Oleksii &lt;3 Anastasiia</h1>
+      <h1>Oleksii & Anastasiia</h1>
     </header>
   );
 };
