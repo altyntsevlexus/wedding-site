@@ -25,6 +25,12 @@
 .address {
   font-size: 1.8rem;
   font-weight: 500;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.address:hover {
+  color: var(--accent-color);
 }
 
 .bow {

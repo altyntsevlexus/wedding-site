@@ -9,7 +9,9 @@ const Invitation: React.FC = () => {
         <p className={styles.names}>Алтинцев Олексій та Заблоцька Анастасія</p>
         <p className={styles.invitation}>Запрошують Вас на своє весілля</p>
         <p className={styles.date}>31 травня 2025</p>
-        <p className={styles.address}>Welcome DOM, вул. Кільцева 7, село Проліски</p>
+        <a className={styles.address} href="https://maps.app.goo.gl/yGBaoupc98bThss8A">
+          Welcome DOM, вул. Кільцева 7, село Проліски
+        </a>
         <img src="/assets/images/bow.svg" alt="Bow" width={150} className={styles.bow} />
       </div>
     </Section>
