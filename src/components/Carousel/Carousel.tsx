@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./Carousel.module.css";
 
 const photos = [
-  "/assets/images/carousel/1.jpg",
-  "/assets/images/carousel/2.jpg",
-  "/assets/images/carousel/3.jpg",
-  "/assets/images/carousel/4.jpg",
+  "/assets/images/carousel/photo-1.jpg",
+  "/assets/images/carousel/photo-2.jpg",
+  "/assets/images/carousel/photo-3.jpg",
+  "/assets/images/carousel/photo-4.jpg",
 ];
 
 const Carousel: React.FC = () => {
