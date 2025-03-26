@@ -6,22 +6,23 @@
 }
 
 .carousel {
-  display: flex;
+  width: 100%;
   height: 100%;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
 }
 
-.carousel::-webkit-scrollbar {
-  display: none;
+.carouselTrack {
+  display: flex;
+  height: 100%;
+  animation: scroll 40s linear infinite;
 }
 
 .carouselItem {
   flex: 0 0 350px;
-  height: 525px;
-  transition: background-color 0.3s ease;
+  height: 100%;
+  width: 350px;
+  object-fit: cover;
+  user-select: none;
 }
 
 .overlayText {
@@ -42,6 +43,15 @@
   pointer-events: none;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 4));
+  }
+}
+
 @media (max-width: 768px) {
   .carouselContainer {
     height: 420px;
@@ -49,6 +59,7 @@
 
   .carouselItem {
     flex: 0 0 280px;
+    width: 280px;
     height: 420px;
   }
 
@@ -56,5 +67,14 @@
     font-size: 3.8rem;
     text-align: center;
     width: 90%;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-280px * 4));
+    }
   }
 }
