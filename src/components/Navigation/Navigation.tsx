@@ -12,7 +12,7 @@ const Navigation: React.FC = () => {
           <a href="#dress-code">Dress-code</a>
         </li>
         <li>
-          <a href="#dog-food">Гав!</a>
+          <a href="#dog-food">Інше</a>
         </li>
       </ul>
     </nav>
