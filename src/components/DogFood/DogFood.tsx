@@ -18,6 +18,17 @@ const DogFood: React.FC = () => {
               Дорогі гості весілля, пропоную Вам взяти участь у благодійній ініціативі - <br />
               <b>принести собачий корм замість квітів.</b>
             </p>
+            <p>
+              {" "}
+              <a
+                href="https://docs.google.com/spreadsheets/d/10JfebBTQLy4zajd7VyZ2eXK7hS_Fjfz9uHeNqzm2DOI/edit?gid=1728759405#gid=1728759405"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                Посилання на потреби притулку
+              </a>
+            </p>
             <p>Згодом, мої батьки передадуть його до притулку для моїх сестер та братів.</p>
             <p>P.S. А ще я не відмовлюсь від смаколиків в подарунок!</p>
           </div>
