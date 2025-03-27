@@ -7,12 +7,24 @@ const DressCode: React.FC = () => {
     <Section id="dress-code" title="Dress-code">
       <div className={styles.wrapper}>
         <div className={styles.block}>
-          <a href="/" aria-label="Ladies" className={styles.link} />
+          <a
+            href="https://www.canva.com/design/DAGi8AmFAlc/B9Ued8tZ0WVW_nTJN9vsvw/view"
+            aria-label="Ladies"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          />
           <p className={styles.text}>Ladies</p>
           <img src="/assets/images/ladies.webp" alt="Ladies" className={styles.image} />
         </div>
         <div className={styles.block}>
-          <a href="/" aria-label="Gentlemen" className={styles.link} />
+          <a
+            href="https://www.canva.com/design/DAGi8LSAeZU/2ZcLV96MiTUePMuY0zbDtw/view"
+            aria-label="Gentlemen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          />
           <p className={styles.text}>Gentlemen</p>
           <img src="/assets/images/gentlemen.jpg" alt="Gentlemen" className={styles.image} />
         </div>
