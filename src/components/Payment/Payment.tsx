@@ -8,6 +8,7 @@ const Payment = () => {
         Якщо ви залишаєтесь на ніч, то можете перевести гроші на один з наших рахунків. Вартість номеру 4400 грн. По
         приїзду ви зможете одразу отримати ключі від номеру та занести туди свої речі.
       </p>
+
       <div className={styles.wrapper}>
         <div className={styles.block}>
           <p className={styles.bankName}>Privat24</p>
@@ -32,6 +33,7 @@ const Payment = () => {
           <img src="/assets/images/mono.jpg" width={300} height={300} alt="Mono" className={styles.image} />
         </div>
       </div>
+      <p className={styles.tip}>Натисніть на зображення, щоб перейти до оплати</p>
     </Section>
   );
 };

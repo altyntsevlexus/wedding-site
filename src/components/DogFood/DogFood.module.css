@@ -139,6 +139,11 @@
   transition: transform 0.3s ease;
 }
 
+.accent {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
 @media (max-width: 768px) {
   .message p {
     font-size: 1.8rem;

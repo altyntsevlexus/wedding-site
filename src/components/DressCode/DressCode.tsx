@@ -5,6 +5,7 @@ import styles from "./DressCode.module.css";
 const DressCode: React.FC = () => {
   return (
     <Section id="dress-code" title="Dress-code">
+      <p className={styles.tip}>Натисніть на зображення, щоб подивитися підбірку</p>
       <div className={styles.wrapper}>
         <div className={styles.block}>
           <a

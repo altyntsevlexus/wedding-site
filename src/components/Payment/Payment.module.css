@@ -39,3 +39,9 @@
   font-family: var(--font-calligraphy);
   margin-bottom: 1rem;
 }
+
+.tip {
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+}
