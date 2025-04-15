@@ -33,7 +33,7 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
-  font-family: var(--font-calligraphy);
+  font-family: var(--font-body);
 }
 
 .clickable {
