@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .text {
@@ -19,16 +19,6 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s ease;
-  overflow: hidden;
-}
-
-.link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
 }
 
 .bankName {
@@ -37,11 +27,35 @@
   font-weight: 600;
   color: var(--accent-color);
   font-family: var(--font-calligraphy);
-  margin-bottom: 1rem;
 }
 
-.tip {
+.cardNumber {
   text-align: center;
-  margin-top: 1rem;
-  font-style: italic;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--font-calligraphy);
+}
+
+.clickable {
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.clickable:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.copied {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  font-family: var(--font-body);
 }
